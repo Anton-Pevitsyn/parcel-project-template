@@ -36,6 +36,17 @@ img {
   list-style-type: none;
 }
 
+.item-title {
+  font-size: 14px;
+  line-height: 1.43;
+  font-weight: 700;
+
+  @media screen and (min-width: 1366px) {
+    font-size: 20px;
+    line-height: 1.64;
+  }
+}
+
 .container {
   width: 100%;
   padding: 0 20px;
