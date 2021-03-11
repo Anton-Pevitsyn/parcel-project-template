@@ -18,7 +18,7 @@
     @extend %form-title;
   }
   & .button {
-    margin-top: 50px;
+    margin-top: 30px;
   }
   @media screen and (max-width: 767px) {
     & .container {
@@ -42,7 +42,7 @@
     }
     pagging-bottom: 70px;
     & .button {
-      margin-top: 30px;
+      margin-top: 50px;
     }
   }
   @media screen and (min-width: 1366px) {

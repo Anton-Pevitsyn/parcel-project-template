@@ -1,32 +1,59 @@
-.input {
-  display: block;
-  width: 280px;
-  min-height: 48px;
-  padding: 15px 28px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  cursor: text;
-  border: 1px solid var(--light-color);
-  color: var(--light-color);
-  background-color: transparent;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 1.21;
-  &:hover,
-  :active,
-  :focus {
-    outline: none;
-    border: 1px solid var(--acsent-color);
+.input-box {
+  position: relative;
+  padding-bottom: 20px;
+  .input {
+    display: block;
+    width: 280px;
+    min-height: 48px;
+    padding: 15px 28px;
+    margin: 0 auto;
+    cursor: text;
+    border: 1px solid var(--light-color);
+    background-color: transparent;
+    color: var(--light-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
+    &:hover,
+    :active,
+    :focus {
+      outline: none;
+      border: 1px solid var(--acsent-color);
+      & + .label {
+        display: none;
+      }
+    }
+  }
+  .label {
+    position: absolute;
+    bottom: 35px;
+    left: 28px;
+    color: var(--light-color);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.21;
   }
   @media screen and (min-width: 768px) {
     width: 390px;
+    margin: 0 auto;
+    .input {
+      width: 100%;
+    }
   }
   @media screen and (min-width: 1366px) {
     width: 478px;
-    min-height: 70px;
-    padding: 23px 40px;
-    font-size: 20px;
-    line-height: 1.2;
-    margin-bottom: 30px;
+    padding-bottom: 30px;
+    .input {
+      min-height: 70px;
+      padding: 23px 40px;
+      font-size: 20px;
+      line-height: 1.2;
+    }
+    .label {
+      font-size: 20px;
+      line-height: 1.2;
+      bottom: 53px;
+      left: 40px;
+    }
   }
 }
